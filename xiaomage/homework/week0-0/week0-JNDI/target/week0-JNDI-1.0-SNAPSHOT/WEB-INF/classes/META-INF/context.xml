@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<context>
+
+    <!-- DB configuration -->
+    <Resource name="jdbc/myDataSource"
+              type="javax.sql.DataSource" auth="Container"
+              description="java derby database"
+              maxActive="100" maxIdle="30" maxWait="10000"
+              username="" password=""
+              driverClassName="org.apache.derby.jdbc.EmbeddedDriver"
+              url="jdbc:derby://localhost:1527/my-derby-db;create=true"/>
+
+    <Resource name="jdbc/mysqlDataSource"
+              type="javax.sql.DataSource" auth="Container"
+              description="java derby database"
+              maxActive="100" maxIdle="30" maxWait="10000"
+              username="root" password="123456"
+              driverClassName="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/db1?characterEncoding=GBK"/>
+
+    <Resource name="jdbc/MyDbConnectionManager" auth="Container"
+              type="rg.geektime.projects.JNDI.MyDbConnectionManager"
+              factory="org.apache.naming.factory.BeanFactory"/>
+</context>
