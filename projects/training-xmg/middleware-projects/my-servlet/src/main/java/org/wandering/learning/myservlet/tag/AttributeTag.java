@@ -39,11 +39,6 @@ public class AttributeTag extends SimpleTagSupport {
 
     @Override
     public void doTag() throws JspException, IOException {
-        ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
-        HttpServletResponse response = attributes.getResponse();
-        response.setHeader("Cache-Control", "no-cache");
-        response.setHeader("Pragma", "no-cache");
-        response.setDateHeader("Expires", -1);
 
         if (message != null) {
             // 从属性中使用消息
@@ -56,7 +51,6 @@ public class AttributeTag extends SimpleTagSupport {
                 out.print(pragma);
             if (expires !=null)
                 out.print(expires);
-
 
         } else {
             // 从内容体中使用消息

@@ -12,6 +12,11 @@
     <title>A simple empty tag page</title>
 </head>
 <body>
+<%
+    request.setAttribute("cacheControl", "no-cache");
+    request.setAttribute("expires" , "-1");
+    request.setAttribute("pragma","no-cache");
+%>
     <ex:Hello cacheControl="no-cache" expires="-1" pragma="no-cache"/>
 </body>
 </html>

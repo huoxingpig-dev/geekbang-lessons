@@ -10,7 +10,7 @@ import javax.servlet.jsp.tagext.SimpleTagSupport;
 import java.io.IOException;
 
 /**
- *  自定义空标签页
+ *  自定义空标签页,示例
  */
 public class EmptyTag extends SimpleTagSupport {
     private String cacheControl;
@@ -36,7 +36,9 @@ public class EmptyTag extends SimpleTagSupport {
         response.setHeader("Cache-Control", cacheControl);
         response.setHeader("Pragma", pragma);
         response.setDateHeader("Expires", expires);
-        //JspWriter out = getJspContext().getOut();
-        //out.print("Hello Empty Tag");
+
+        JspWriter out = getJspContext().getOut();
+        out.print(cacheControl);
+        out.print("Hello Empty Tag");
     }
 }
