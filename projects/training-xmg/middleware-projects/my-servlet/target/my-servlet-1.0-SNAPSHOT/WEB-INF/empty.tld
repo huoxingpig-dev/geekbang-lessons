@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd">
+    <description><![CDATA["Empty tag functions"]]></description>
+    <display-name>"Empty tag Functions"</display-name>
+    <tlib-version>2.2</tlib-version>
+    <short-name>empty-tag</short-name>
+    <uri>/empty-tld</uri>
+    <tag>
+        <name>Hello</name>
+        <tag-class>org.wandering.learning.myservlet.tag.EmptyTag</tag-class>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <name>cacheControl</name>
+            <required>false</required>
+            <rtexprvalue>false</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <name>pragma</name>
+            <required>false</required>
+            <rtexprvalue>false</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <name>expires</name>
+            <required>false</required>
+            <rtexprvalue>false</rtexprvalue>
+            <type>java.lang.Long</type>
+        </attribute>
+    </tag>
+
+</taglib>
+
+ 

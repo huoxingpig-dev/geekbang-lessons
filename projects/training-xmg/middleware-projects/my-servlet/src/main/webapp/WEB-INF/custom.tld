@@ -1,0 +1,11 @@
+<taglib>
+    <tlib-version>1.0</tlib-version>
+    <jsp-version>2.1</jsp-version>
+    <short-name>Custom TLD</short-name>
+    <tag>
+        <name>Custom</name>
+        <tag-class>org.wandering.learning.myservlet.tag.CustomTag</tag-class>
+        <body-content>scriptless</body-content>
+    </tag>
+    <uri>/custom-tld</uri>
+</taglib>
