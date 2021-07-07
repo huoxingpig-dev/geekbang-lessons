@@ -49,9 +49,13 @@ public class AttributeTag extends SimpleTagSupport {
             // 从属性中使用消息
             JspWriter out = getJspContext().getOut();
             out.println(message);
-            out.print(cacheControl);
-            out.print(pragma);
-            out.print(expires);
+
+            if (cacheControl != null)
+                out.print(cacheControl);
+            if (pragma != null)
+                out.print(pragma);
+            if (expires !=null)
+                out.print(expires);
 
 
         } else {
