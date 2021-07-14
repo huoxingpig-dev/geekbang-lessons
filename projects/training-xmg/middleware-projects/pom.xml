@@ -5,15 +5,17 @@
     <parent>
         <artifactId>training-xmg</artifactId>
         <groupId>org.wandering.learning</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>${revision}</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>middleware-projects</artifactId>
+    <version>${revision}</version>
     <packaging>pom</packaging>
     <modules>
         <module>my-servlet</module>
+        <module>my-configuration</module>
     </modules>
 
 
