@@ -1,0 +1,16 @@
+org/geektimes/commons/io/SerializersAndDeserializersTest.class
+org/geektimes/commons/jndi/file/FileSystemContextTest.class
+org/geektimes/commons/sql/IntegerPreparedStatementParameterMapperTest.class
+org/geektimes/commons/util/PriorityComparatorTest$A.class
+org/geektimes/commons/sql/JdbcExecutorTest.class
+org/geektimes/commons/util/PriorityComparatorTest$B.class
+org/geektimes/commons/jndi/file/FileSystemInitialContextFactoryBuilderTest.class
+org/geektimes/commons/io/DefaultSerializerAndDeserializerTest.class
+org/geektimes/commons/sql/PreparedStatementParameterMapperTest.class
+org/geektimes/commons/util/PriorityComparatorTest$C.class
+org/geektimes/commons/jndi/file/FileSystemInitialContextFactoryTest.class
+org/geektimes/commons/sql/User.class
+org/geektimes/commons/util/PriorityComparatorTest.class
+org/geektimes/commons/io/StringSerializerAndDeserializerTest.class
+org/geektimes/commons/util/ExceptionUtilsTest.class
+org/geektimes/commons/util/PriorityComparatorTest$D.class

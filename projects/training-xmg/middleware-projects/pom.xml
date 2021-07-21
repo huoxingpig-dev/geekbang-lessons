@@ -16,6 +16,9 @@
     <modules>
         <module>my-servlet</module>
         <module>my-configuration</module>
+        <module>my-rpc</module>
+        <module>my-rest-client</module>
+        <module>my-commons</module>
     </modules>
 
 
